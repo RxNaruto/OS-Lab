@@ -10,7 +10,7 @@ int main() {
     }
     else if (pid == 0) {
         printf("Child process (PID: %d) executing 'ps' command...\n", getpid());
-        execlp("ps", "ps", "-e", NULL); 
+        execlp("ps", "ps", NULL); 
         printf("execlp failed");
         return 1;
     }
